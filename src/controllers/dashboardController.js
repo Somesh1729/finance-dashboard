@@ -1,7 +1,7 @@
 const DashboardService = require('../services/DashboardService');
 const { sendSuccess } = require('../utils/Response');
 
-class DashboardController {
+class dashboardController {
   constructor() {
     this.dashboardService = new DashboardService();
     this.overview          = this.overview.bind(this);
@@ -65,4 +65,4 @@ class DashboardController {
   }
 }
 
-module.exports = new DashboardController();
+module.exports = new dashboardController();
