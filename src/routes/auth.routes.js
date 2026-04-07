@@ -6,10 +6,10 @@ const { loginSchema, createUserSchema } = require('../validators/schemas');
 
 const router = Router();
 
-router.post('/login', validate(loginSchema), authController.login);
+router.post('/login', validate(loginSchema), AuthController.login);
 
-router.post('/register', validate(createUserSchema), authController.register);
+router.post('/register', validate(createUserSchema), AuthController.register);
 
-router.get('/me', authenticate, authController.me);
+router.get('/me', authenticate, AuthController.me);
 
 module.exports = router;
