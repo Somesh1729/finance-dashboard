@@ -1,7 +1,7 @@
 const UserService = require('../services/UserService');
 const { sendSuccess, sendCreated } = require('../utils/Response');
 
-class UserController {
+class userController {
   constructor() {
     this.userService = new UserService();
     this.list   = this.list.bind(this);
@@ -57,4 +57,4 @@ class UserController {
   }
 }
 
-module.exports = new UserController();
+module.exports = new userController();
